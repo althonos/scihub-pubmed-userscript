@@ -1,4 +1,4 @@
-# Sci-Hub Pubmed Userscript
+# Full Text Link for Sci-Hub on Pubmed
 
 *A simple userscript to add a Full Text Link button redirecting to Sci-Hub on PubMed article pages.*
 
