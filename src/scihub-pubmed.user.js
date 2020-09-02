@@ -19,7 +19,7 @@ var link = `${base}https://pubmed.ncbi.nlm.nih.gov/${pmid}/`;
 $("div.full-text-links-list")
   .prepend(`
     <a class="link-item" target="_blank" data-ga-category="full_text" href="${link}">
-      <img class="full-text provider logo" src="https://raw.githubusercontent.com/althonos/scihub-pubmed-userscript/master/static/badge.png?token=ACCCNJ4F2WI4M4BQSN5S64C7LDRA4">
+      <img class="full-text provider logo" src="https://raw.githubusercontent.com/althonos/scihub-pubmed-userscript/master/static/badge.png">
       <span class="text>
         Sci-Hub Full Text
       </span>
