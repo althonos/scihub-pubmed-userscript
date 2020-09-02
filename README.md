@@ -2,6 +2,9 @@
 
 *A simple userscript to add a Full Text Link button redirecting to Sci-Hub on PubMed article pages.*
 
+[![OpenUserJS](https://img.shields.io/badge/install-OpenUserJS-lightblue?style=flat-square&maxAge=2678400)](https://openuserjs.org/scripts/althonos/Sci-Hub_Full_Text_Link_for_PubMed)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square&maxAge=2678400)](https://choosealicense.com/licenses/mit/)
+[![GitHub](https://img.shields.io/badge/source-GitHub-303030?style=flat-square&maxAge=2678400)](https://github.com/althonos/scihub-pubmed-userscript)
 
 ## Overview
 
