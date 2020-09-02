@@ -4,7 +4,10 @@
 // @match       *://pubmed.ncbi.nlm.nih.gov/*/
 // @version     0.1.0
 // @author      althonos
+// @license     MIT
+// @homepageURL http://github.com/althonos/scihub-pubmed-userscript
 // @description A simple userscript to add a Full Text Link button redirecting to Sci-Hub on PubMed article pages.
+// @downloadURL https://raw.githubusercontent.com/althonos/scihub-pubmed-userscript/master/src/scihub-pubmed.user.js
 //
 // @grant       none
 // @run-at       document-end
