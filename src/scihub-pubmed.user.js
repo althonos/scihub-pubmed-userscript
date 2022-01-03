@@ -19,6 +19,20 @@ var base = `https://sci-hub.st/`;
 var pmid = $("meta[name=uid]").attr("content");
 var link = `${base}https://pubmed.ncbi.nlm.nih.gov/${pmid}/`;
 
+if ($("div.full-text-links-list").length == 0) {
+    $("aside.page-sidebar")
+      .find("div.inner-wrap")
+      .first()
+      .prepend(`
+        <div class="full-text-links">
+          <div class="full-view">
+            <h3 class="title">Full text links</h3>
+            <div class="full-text-links-list"></div>
+          </div>
+        </div>
+      `);
+}
+
 $("div.full-text-links-list")
   .prepend(`
     <a class="link-item" target="_blank" data-ga-category="full_text" href="${link}">
