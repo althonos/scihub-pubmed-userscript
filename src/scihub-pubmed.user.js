@@ -16,8 +16,12 @@
 // ==/UserScript==
 
 var base = `https://sci-hub.st/`;
+
 var pmid = $("meta[name=uid]").attr("content");
-var link = `${base}https://pubmed.ncbi.nlm.nih.gov/${pmid}/`;
+var doi  = $("meta[name=citation_doi]").attr("content");
+
+var link_pmid = `${base}https://pubmed.ncbi.nlm.nih.gov/${pmid}/`;
+var link_doi  = `${base}https://pubmed.ncbi.nlm.nih.gov/${doi}/`;
 
 if ($("div.full-text-links-list").length == 0) {
     $("aside.page-sidebar")
@@ -33,12 +37,26 @@ if ($("div.full-text-links-list").length == 0) {
       `);
 }
 
-$("div.full-text-links-list")
-  .prepend(`
-    <a class="link-item" target="_blank" data-ga-category="full_text" href="${link}">
-      <img class="full-text provider logo" src="https://raw.githubusercontent.com/althonos/scihub-pubmed-userscript/master/static/badge.png">
-      <span class="text>
-        Sci-Hub Full Text
-      </span>
-    </a>
-  `);
+if (pmid !== null) { 
+  $("div.full-text-links-list")
+    .prepend(`
+      <a class="link-item" target="_blank" data-ga-category="full_text" href="${link_pmid}">
+        <img class="full-text provider logo" src="https://raw.githubusercontent.com/althonos/scihub-pubmed-userscript/master/static/badge-pmid.png">
+        <span class="text>
+          Sci-Hub Full Text (PMID)
+        </span>
+      </a>
+    `);
+}
+
+if (doi !== null) {
+    $("div.full-text-links-list")
+    .prepend(`
+      <a class="link-item" target="_blank" data-ga-category="full_text" href="${link_doi}">
+        <img class="full-text provider logo" src="https://raw.githubusercontent.com/althonos/scihub-pubmed-userscript/master/static/badge-doi.png">
+        <span class="text>
+          Sci-Hub Full Text (DOI)
+        </span>
+      </a>
+    `);
+}
