@@ -2,7 +2,7 @@
 // @name        Sci-Hub Full Text Link for PubMed
 // @namespace   http://github.com/althonos/scihub-pubmed-userscript
 // @match       *://pubmed.ncbi.nlm.nih.gov/*/
-// @version     0.2.0
+// @version     0.2.1
 // @author      althonos
 // @license     MIT
 // @homepageURL http://github.com/althonos/scihub-pubmed-userscript
