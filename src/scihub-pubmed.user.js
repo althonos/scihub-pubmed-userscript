@@ -21,7 +21,7 @@ var pmid = $("meta[name=uid]").attr("content");
 var doi  = $("meta[name=citation_doi]").attr("content");
 
 var link_pmid = `${base}https://pubmed.ncbi.nlm.nih.gov/${pmid}/`;
-var link_doi  = `${base}https://pubmed.ncbi.nlm.nih.gov/${doi}/`;
+var link_doi  = `${base}${doi}/`;
 
 if ($("div.full-text-links-list").length == 0) {
     $("aside.page-sidebar")
